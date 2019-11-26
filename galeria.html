@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<title>Astrólogo DJAWARA | Obtenha resultados rápidos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="O mais importante da astrologia é obter resultados rápidos e garantidos a 100%. Dotado de poderees o Astrologo DJAWARA ajuda a resolver os seus problemas difíceis em 7 dias. Problemas como: Amor - Proteção - Doenças - Fidelidade Absoluta entre Casais - Sorte ao Jogo - Impotência Sexual - Droga - Negócios - Maus olhados espirituais - Exames - Casamento - Atracção de Clientela para Comerciantes e muitos mais...">
+<meta name="keywords" content="Consultas de Astrologia Lisboa,Videntes Lisboa,Vidência,ASTROLOGO,Astrologo,astrologo,astrologia,astrologia africana,astrologia africa, amor,protecao,maus olhados,sorte ao jogo, exames, exames astrologia">
+<meta name="author" content="Thauan Vargas">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/v4-shims.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="top">
+  <div class="bar white card" id="myNavbar">
+    <a href="index.php" class="bar-item button wide">ASTROLOGO DJAWARA<img src="imagens/logo.png" style="width:25px;" /></a>
+    <!-- Right-sided navbar links -->
+    <div class="right hide-small">
+      <a href="index.php#sobre" class="bar-item button"><i class="fa fa-book"></i> SOBRE</a>
+      <a href="galeria.html" class="bar-item button"><i class="fa fa-th"></i> GALERIA</a>
+      <a href="index.php#servicos" class="bar-item button"><i class="fa fa-euro-sign"></i> SERVIÇOS</a>
+      <a href="index.php#contatos" class="bar-item button"><i class="fa fa-envelope"></i> CONTATOS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="bar-item button right hide-large hide-medium" onclick="open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="sidebar bar-block black card animate-left hide-medium hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="close()" class="bar-item button large padding-16">Fechar ×</a>
+  <a href="index.php#sobre" onclick="close()" class="bar-item button">SOBRE</a>
+  <a href="galeria.html" onclick="close()" class="bar-item button">GALERIA</a>
+  <a href="index.php#servicos" onclick="close()" class="bar-item button">SERVIÇOS</a>
+  <a href="index.php#contatos" onclick="close()" class="bar-item button">CONTATOS</a>
+</nav>
+
+<div class="container" style="padding:64px 16px" id="galeria">
+  <h3 class="center">Galeria</h3>
+
+  <div class="row-padding" style="margin-top:64px">
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+  </div>
+
+  <div class="row-padding section">
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+    <div class="col l3 m6">
+      <img src="imagens/1.jpeg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="DJAWARA">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="modal black" onclick="this.style.display='none'">
+  <span class="button xxlarge black padding-large display-topright" title="Close Modal Image">×</span>
+  <div class="modal-content animate-zoom center transparent padding-64">
+    <img id="img01" class="image">
+    <p id="caption" class="opacity large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="center black padding-64">
+  <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>Voltar ao Topo</a>
+  <div class="xlarge section">
+    <a href="https://www.facebook.com/mutaro.DJAWARA.5" ><i class="fa fa-facebook-square hover-opacity"></i></a>
+  </div>
+  <p>Copyright &copy; DJAWARA | Desenvolvido por Thauan Vargas</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
